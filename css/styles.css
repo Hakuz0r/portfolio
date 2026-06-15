@@ -140,6 +140,15 @@ img{display:block;max-width:100%}
 }
 .photo-tag .t{font-size:12px;color:var(--ink-soft);font-weight:600}
 .photo-tag .v{font-weight:800;font-size:15px;letter-spacing:-.01em}
+/* мобильный hero: одна колонка, фото снизу и целиком (без обрезки) */
+@media(max-width:820px){
+  .hero{padding:128px 0 72px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-sub{max-width:48ch}
+  .hero-photo .imgslot{height:auto}
+  .hero-photo .imgslot img{position:static;width:100%;height:auto;display:block}
+  .hero-photo .imgslot-cap{display:none}
+}
 
 /* ===== STATS (dark, silver) ===== */
 .stats{background:var(--navy);color:#fff}
